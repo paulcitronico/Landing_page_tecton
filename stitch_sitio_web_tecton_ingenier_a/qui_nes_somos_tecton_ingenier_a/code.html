@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quiénes Somos | Tecton Ingeniería</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Work+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#944b00",
+                    "tertiary-fixed": "#d4e4fc",
+                    "surface": "#f7fafc",
+                    "surface-variant": "#e0e3e5",
+                    "secondary-container": "#fe9743",
+                    "on-tertiary-fixed": "#0d1c2e",
+                    "background": "#f7fafc",
+                    "tertiary-fixed-dim": "#b8c8e0",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-background": "#181c1e",
+                    "on-secondary-fixed": "#301400",
+                    "on-secondary-fixed-variant": "#703700",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#96a0b5",
+                    "inverse-primary": "#bdc7dc",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-secondary-container": "#6b3500",
+                    "on-primary-fixed": "#121c2c",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d7dadc",
+                    "primary-container": "#2d3748",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f1f4f6",
+                    "on-error-container": "#93000a",
+                    "outline": "#75777d",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary": "#182232",
+                    "primary-fixed-dim": "#bdc7dc",
+                    "primary-fixed": "#d9e3f9",
+                    "surface-bright": "#f7fafc",
+                    "outline-variant": "#c5c6cd",
+                    "on-primary-fixed-variant": "#3d4759",
+                    "surface-container": "#ebeef0",
+                    "inverse-on-surface": "#eef1f3",
+                    "surface-container-high": "#e5e9eb",
+                    "surface-tint": "#555f71",
+                    "on-surface-variant": "#45474c",
+                    "on-surface": "#181c1e",
+                    "on-tertiary-container": "#92a1b8",
+                    "on-tertiary-fixed-variant": "#39485c",
+                    "tertiary-container": "#29384b",
+                    "tertiary": "#132235",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#ffb783"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "max-width": "1280px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Work Sans"],
+                    "body-lg": ["Work Sans"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant shadow-sm h-20 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto h-full">
+<div class="flex items-center gap-4">
+<img alt="Tecton Ingeniería Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWdEtfFv8P3PxroopidU5I1x_6zImSuCh3xjSyARZy67efTIss18Jr9tF4HbdsbpgxFsRF459pbZRxgE_L-X5D7PyWlMCRsw0dIX4hQsky9pcToHIH2xOuhf0rlfT_HQJaL95uyozMwA4GoJJGtm_i1s82puFNsQx_9JSh9TenqdSNcQbBP5vL-aADpke9bIOzQSgrdFjXtIBZNJCYcFps0LMbXuK-4JIGzs1Je7AhbetpuJxA5k6f"/>
+<span class="hidden lg:block font-headline-md text-headline-md font-bold text-primary">Tecton Ingeniería</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Inicio</a>
+<a class="text-secondary border-b-2 border-secondary font-bold pb-1 font-body-md text-body-md" href="#">Quiéne Somos</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Servicios</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Proyectos</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold hover:bg-primary-container active:scale-95 transition-all duration-200 font-body-md text-body-md">
+                Presupuesto
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[60vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/60 z-10"></div>
+<div class="w-full h-full" data-alt="A grand cinematic low-angle shot of a modern steel and glass architectural structure against a clear blue sky. The lighting is crisp and bright, emphasizing the clean lines and geometric precision of civil engineering. The overall aesthetic is professional, corporate, and solid, with a color palette of deep navy blues and industrial grays." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzZE3XnpTHFUPcLROibdsGD5b_UB_lXPh9WV1qoJgd2i-iKGSid7Pz6elNeo68cppBxpNlB_jPKehhGTPaoZpK10UYBmPiKU9gShHafUJsBRsYAK5D6DG3RzeIIl0WQJlz-MxmkSCjjSn3NmYGI0uSlog8tAwp5nesSUGa9capwvU4hqdjTnPTgDsD0cykyFVf54ImCLZK_OPP_aUBHphx0DCRRPpGWTKG5qvWpZHeLb9Mpq4tWmjo')"></div>
+</div>
+<div class="relative z-20 px-margin-desktop max-w-max-width mx-auto w-full text-white">
+<p class="font-label-sm text-label-sm text-secondary-container mb-4 uppercase tracking-widest">Excelencia en Ingeniería</p>
+<h1 class="font-display-lg text-display-lg max-w-2xl mb-6">Construyendo los pilares del mañana con precisión técnica.</h1>
+<p class="font-body-lg text-body-lg max-w-xl text-on-primary-container">Especialistas en infraestructuras que desafían los límites de la arquitectura y la funcionalidad.</p>
+</div>
+</section>
+<!-- Historia & Misión/Visión -->
+<section class="py-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Nuestra Trayectoria</span>
+<h2 class="font-headline-md text-headline-md mt-2 text-primary">Décadas de solidez y compromiso estructural.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Fundada en 1998, Tecton Ingeniería nació con la visión de transformar el paisaje urbano mediante soluciones de ingeniería civil de alta complejidad. A lo largo de estos años, hemos consolidado un equipo interdisciplinario que une la experiencia tradicional con las últimas innovaciones tecnológicas.
+                    </p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant pt-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary">Misión</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Proveer soluciones integrales de ingeniería civil que garanticen seguridad, eficiencia y sostenibilidad en cada proyecto.</p>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-secondary">Visión</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Ser referentes internacionales en el diseño de infraestructuras críticas, liderando la industria mediante la innovación digital.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-xl overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A group of professional civil engineers and architects in white hard hats and reflective vests standing over a large blueprint spread across a technical desk in a bright, modern site office. Large windows in the background reveal a construction site under a golden hour sun. The style is clean, corporate photography with high contrast and sharp detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRA8LSmuDKInQ8S7M120oJYo80Klk2xnBw0mpOO5ksBNNoA-ydnhO0cshHO765ds5IzjD_8Evv_H4pzPC2kILZvHREx599DASXhXedtdxks7WBq8iC6yVQjnxEZXMaDqqGEYE5a_L0PDvmSc0O2fHkHy3ihX6FrdUQS8Oh6O1YQfq6RIGZFZno8EY5S3F51cxyfEF3c7OT1pE5a6_lb-zIFqXo1y9IlMhOM-fTO2r32SxFcd5kTAS8"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary-container text-white p-8 rounded-lg shadow-lg hidden md:block">
+<p class="font-display-lg text-display-lg text-secondary-container">25+</p>
+<p class="font-label-sm text-label-sm uppercase tracking-wider">Años de experiencia</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Valores Corporativos (Bento Style) -->
+<section class="bg-surface-container-low py-24">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-secondary">ADN Tecton</span>
+<h2 class="font-headline-md text-headline-md mt-2 text-primary">Nuestros Valores Fundamentales</h2>
+</div>
+<div class="bento-grid">
+<!-- Valor 1 -->
+<div class="col-span-12 md:col-span-8 bg-surface p-10 rounded-xl shadow-sm border border-outline-variant hover:shadow-md transition-all group">
+<div class="flex items-start gap-6">
+<div class="bg-secondary/10 p-4 rounded-lg group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">shield_with_heart</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Seguridad Absoluta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">La integridad física de nuestros colaboradores y la estabilidad estructural de nuestras obras son innegociables. Implementamos protocolos de seguridad que exceden los estándares internacionales.</p>
+</div>
+</div>
+</div>
+<!-- Valor 2 -->
+<div class="col-span-12 md:col-span-4 bg-primary text-white p-10 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md mb-2">Innovación</h3>
+</div>
+<p class="font-body-md text-body-md opacity-80">Aplicamos metodologías BIM de vanguardia y gemelos digitales para optimizar cada etapa del ciclo de vida de la obra.</p>
+</div>
+<!-- Valor 3 -->
+<div class="col-span-12 md:col-span-4 bg-surface p-10 rounded-xl shadow-sm border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">handshake</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Compromiso</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cumplimos plazos y presupuestos con rigor matemático, estableciendo relaciones de confianza a largo plazo con nuestros clientes.</p>
+</div>
+<!-- Valor 4 -->
+<div class="col-span-12 md:col-span-8 relative rounded-xl overflow-hidden h-64 md:h-auto">
+<div class="absolute inset-0 bg-secondary/40 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Close-up of a high-tech robotic surveying instrument used in modern civil engineering, positioned on a tripod overlooking an urban construction project at dusk. City lights twinkle in the soft-focus background. The image highlights precision, technology, and futuristic engineering. Corporate orange and deep blue tones dominate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYPfpTaj9T9Ave2AcK_kRSQZJ7RmztLX-_ig02bOOUri_vqVrXma8ioXeSFTeO1ai94q80fEbocFo1ISceALyhSxA-zCecRqFJ8js9pZBfJA8QanyoW3giNMqLDc3Vkf8C4n09AaPVWBVb1-9XLbvt71rv7qyNAfHATXXtS7YqM8h2Zlfm76xZ5wwPnQo1cYczn_OKU34jzcjYtY9Uo08RXBnHNcTqVP0srMejC1B3rKAeC7d40PN"/>
+<div class="absolute bottom-6 left-6 z-20 text-white">
+<h3 class="font-headline-md text-headline-md">Sostenibilidad Técnica</h3>
+<p class="font-body-md text-body-md">Estructuras diseñadas para perdurar respetando el entorno.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="bg-primary-container rounded-2xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h2 class="font-display-lg text-display-lg text-white mb-6">¿Tiene un proyecto en mente?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">Nuestro equipo de ingenieros está listo para ofrecerle la asesoría técnica más avanzada del mercado.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform font-body-md text-body-md">Hablemos ahora</button>
+<button class="border-2 border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors font-body-md text-body-md">Ver Proyectos</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-12 max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-primary mb-4">Tecton Ingeniería</div>
+<p class="font-body-md text-body-md opacity-70 mb-6">Líderes en ingeniería civil y soluciones estructurales de alta precisión desde 1998.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container mb-6">Navegación</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Inicio</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed font-bold" href="#">Quiénes Somos</a></li>
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Servicios</a></li>
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Proyectos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Cookies</a></li>
+<li><a class="font-body-md text-body-md opacity-80 hover:text-secondary-container transition-colors" href="#">Soporte Técnico</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container mb-6">Ubicación</h4>
+<p class="font-body-md text-body-md opacity-80 mb-4">Calle de la Ingeniería, 102<br/>28001 Madrid, España</p>
+<div class="h-32 rounded-lg bg-tertiary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-50" data-alt="A stylized minimalist map of Madrid showing a specific engineering district with clean corporate iconography and a subtle navy blue and orange color scheme." data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9wxQzno0lRUZdu0zwEhx5eSFnjoEM770h-8qftA8eT27mYQ2a_MLj4G_H99XdPReLJPLqeeIMxcL3ED2ykeYL2cF0GO18vRkTH-d4Ys1sQAzrxLuvSeXDyUjYojRzmy4lVNIBFPskp06EpScVmDUPQjAjwjle2IqikKYp8tOHMI7jnqlEsEI-nCIEia1SsyCp4uJqePp_v2ctXiRGBWQoNz-sqMEZeKWpJxqhSUrmnbvvE-XY9I7z"/>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 py-6 text-center px-margin-desktop max-w-max-width mx-auto">
+<p class="font-body-md text-body-md opacity-50">© 2024 Tecton Ingeniería. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-white/90', 'backdrop-blur-md');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16', 'bg-white/90', 'backdrop-blur-md');
+            }
+        });
+    </script>
+</body></html>

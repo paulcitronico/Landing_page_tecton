@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Proyectos | Tecton Ingeniería</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Work+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#944b00",
+                    "tertiary-fixed": "#d4e4fc",
+                    "surface": "#f7fafc",
+                    "surface-variant": "#e0e3e5",
+                    "secondary-container": "#fe9743",
+                    "on-tertiary-fixed": "#0d1c2e",
+                    "background": "#f7fafc",
+                    "tertiary-fixed-dim": "#b8c8e0",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-background": "#181c1e",
+                    "on-secondary-fixed": "#301400",
+                    "on-secondary-fixed-variant": "#703700",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#96a0b5",
+                    "inverse-primary": "#bdc7dc",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-secondary-container": "#6b3500",
+                    "on-primary-fixed": "#121c2c",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d7dadc",
+                    "primary-container": "#2d3748",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f1f4f6",
+                    "on-error-container": "#93000a",
+                    "outline": "#75777d",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary": "#182232",
+                    "primary-fixed-dim": "#bdc7dc",
+                    "primary-fixed": "#d9e3f9",
+                    "surface-bright": "#f7fafc",
+                    "outline-variant": "#c5c6cd",
+                    "on-primary-fixed-variant": "#3d4759",
+                    "surface-container": "#ebeef0",
+                    "inverse-on-surface": "#eef1f3",
+                    "surface-container-high": "#e5e9eb",
+                    "surface-tint": "#555f71",
+                    "on-surface-variant": "#45474c",
+                    "on-surface": "#181c1e",
+                    "on-tertiary-container": "#92a1b8",
+                    "on-tertiary-fixed-variant": "#39485c",
+                    "tertiary-container": "#29384b",
+                    "tertiary": "#132235",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#ffb783"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "max-width": "1280px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Work Sans"],
+                    "body-lg": ["Work Sans"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                    "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f7fafc;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto h-20">
+<div class="flex items-center gap-4">
+<img alt="Tecton Ingeniería Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWdEtfFv8P3PxroopidU5I1x_6zImSuCh3xjSyARZy67efTIss18Jr9tF4HbdsbpgxFsRF459pbZRxgE_L-X5D7PyWlMCRsw0dIX4hQsky9pcToHIH2xOuhf0rlfT_HQJaL95uyozMwA4GoJJGtm_i1s82puFNsQx_9JSh9TenqdSNcQbBP5vL-aADpke9bIOzQSgrdFjXtIBZNJCYcFps0LMbXuK-4JIGzs1Je7AhbetpuJxA5k6f"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hidden lg:block">Tecton Ingeniería</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform" href="#">Inicio</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform" href="#">Quiénes Somos</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform" href="#">Servicios</a>
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary font-bold pb-1 active:scale-95 transition-transform" href="#">Proyectos</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform" href="#">Contacto</a>
+</div>
+<button class="bg-[#ED8936] text-white px-6 py-2 rounded-lg font-bold hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95">
+                Presupuesto
+            </button>
+</nav>
+</header>
+<main class="max-w-max-width mx-auto px-margin-desktop py-12">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Nuestros Proyectos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Ingeniería de vanguardia aplicada a soluciones estructurales, residenciales e industriales. Cada obra es un testimonio de nuestra precisión técnica y compromiso con la excelencia.
+            </p>
+</section>
+<!-- Filters -->
+<section class="mb-12 flex flex-wrap items-center gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Filtrar por:</span>
+<div class="flex flex-wrap gap-2">
+<button class="filter-btn active bg-primary text-on-primary px-5 py-2 rounded-full font-medium transition-all shadow-sm" onclick="filterProjects('todos')">Todos</button>
+<button class="filter-btn border-2 border-outline-variant text-on-surface-variant px-5 py-2 rounded-full font-medium hover:border-secondary hover:text-secondary transition-all" onclick="filterProjects('industrial')">Industrial</button>
+<button class="filter-btn border-2 border-outline-variant text-on-surface-variant px-5 py-2 rounded-full font-medium hover:border-secondary hover:text-secondary transition-all" onclick="filterProjects('residencial')">Residencial</button>
+<button class="filter-btn border-2 border-outline-variant text-on-surface-variant px-5 py-2 rounded-full font-medium hover:border-secondary hover:text-secondary transition-all" onclick="filterProjects('civil')">Civil</button>
+</div>
+</section>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="projects-grid">
+<!-- Project 1 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="industrial">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A grand-scale modern industrial warehouse with massive steel beam structural elements visible. The lighting is crisp, daylight pouring through skylights onto a polished concrete floor. The atmosphere is professional, clean, and highlights the precision of civil engineering and heavy construction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuAKl7-PetxmyFFUIIrxKHeCh9mMahbbKXha1c2eO9ITPTSh1Cy4zLnCJsqVOFnjbe2l7blfCPBocUQ2TVq_aFfFS_LoQzZks0ZdetJ07qCGO9jtCkgVlCe1v7pK5JkN-xmSFtHTYa9ezJQupe7XHV2P_s1h8QI23z0VwQWnDA9w5zsgGLeO15OqRBRhId-VNyiCjHGQ66mG1nbj9lZiCM_B9aBRAh04M1DZnXDm85FdHLhEIdaSB2"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Industrial</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Centro Logístico Alpha</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Optimización estructural y diseño de pavimentos de alta resistencia para operaciones de carga pesada.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Zaragoza, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="residencial">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A luxury contemporary residential complex featuring sleek white concrete facades and expansive glass windows. The architecture is minimalist and geometric, set against a sunset sky with warm golden light reflecting off the pool area. High-end engineering detail is evident in the cantilevered terraces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4yx1jBNlPUqcl0u3z7V0dSS6iHYNcWFa7rixkVfQG5x-ojIC6XKdhWDJvqvV5QB4pNT88ht8RSsVsvW1MDDUhd1fVvIzdziNBOnjMvByDtcOk2tq-xkWnU7dI30OphQqu2RstStMzkjdVbkkTKIduk_pX4P7hkYhxSLVGgiLhpY6FmBLTpoLMe0ntwt5RvNmC8CSx2qQMQUKYgVGn0OAgNYK2wmETBULCERkaKRjlEb1sCtedmX3k"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Residencial</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Residencial Mirador</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Cimentaciones profundas y estructura de hormigón armado para complejo de lujo de 12 niveles.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Madrid, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="civil">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A massive concrete bridge project under construction, showing intricate scaffolding and steel reinforcements. The perspective is from below, looking up at the monumental pillars. The scene is bright with morning sun, emphasizing the raw power and scale of civil engineering infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN3fjKYRoF3mQYMQoiqJuxK2_jEgnoFRdgw5r8IE46_Rjbc9NyYivowaqXdckyuQHK2gQBhCrHYomUCFXwXvPOZUB1fyPi8A0io2fSxywY3Gd1Wx-21LI5nkiZPMW4X40yH5pMzwEuEgOfXtDGKb5wUE3g7PUUToExYPXqGVw-mNpyDPsFavuRG1fi2jXcG4L-RPgo3RPmyVjvqmqW5O4kZOLE1DOg-FJUlFwJ-LxmZmZYp5Qo8rKP"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Civil</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Viaducto del Río Seco</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Ingeniería de puentes y supervisión de obra para infraestructura vial de conexión interprovincial.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Navarra, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="industrial">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="The exterior of a sleek, modern technological plant with metallic silver panels and orange structural accents. The sky is a clear corporate blue. Foreground features manicured landscaping and precise architectural lines that mirror the company's engineering precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSsuGvXrjSEcPYGY5t2BKzfuK7pNc5AN6xBR3lFB8BCsWNka3qbcHXw9rsHbR4OYt9nPNExdtcpcdxI3sz8zenBI07vOhqjIOmEtn6j22gyhPyJ8JMo-0lEFleeG2pgQUxv5wf2012dRRztg_2Zo-p3Uk96kNLMZZESKbXiY7lOzaSz3pfRJipPF-35DlsDOP6pfE3o-BTf-Q8xwG7MC-L5Myb8wPo9Goqe-j6d0IRcBubBJhRF7k1"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Industrial</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Planta Tecnológica Nexo</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Diseño y ejecución de estructuras metálicas de gran luz para procesos de manufactura automatizada.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Barcelona, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="residencial">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A series of modern suburban townhouses with brick and cedar accents. The lighting is soft late-afternoon, creating long shadows and highlighting the high-quality finish and structural integrity of the residential build. The environment is serene and upscale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAaCrX_YOuIuNz4xtKSxHj8RYfgKNie_jHWMANdga8wXTZX6x7tuqdfxHnW8tKZuxvukaUUqJVB2tH1ymbQ4JntZrnWvXSmCdgDgO0UTdJzwuOpBXn1nUZ5dlj9QpscEvJoVP8Lilc0yaGe-QkRGVuvv7aKURUFUPeH9W22ZGq5uBCHvEZ_EAMBf0bA0h4J0A_POsqpmWW0LTX3gm8rcZmsKdrCjFRAZs3ddaDUf1DkjGiuxKvRXXi"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Residencial</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Viviendas Eco-Urban</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Criterios de sostenibilidad aplicados a la edificación residencial de alta eficiencia energética.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Sevilla, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="project-card group relative bg-white rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-category="civil">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An expansive view of an urban redevelopment project showing new pedestrian plazas with technical concrete work and integrated drainage systems. The style is ultra-modern, with clean lines and high-contrast materials like dark stone and polished concrete under bright daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKH4ZkpM3SGwbLCytDsgbj3iaGpmfQue_r2y35Hj_dI_PV7Xaq0VjumXlC9s3R9X0t768XBbSL79036CWqZQf7CpaWKY3InTd4pANKI-ZE2a8x8R-O5V3xctLevuAYvICHRy3qbPGOrp9zPspcAc4EaCSgN2BJWPKchgKBrbmd7DiQz0Wu3IbjYfcAqiKmKTL-OkyDo_PaJnJ9UtoLrznuYJv306k28It58Dz3FNFZ36TUQ_g_9n6D"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-label-sm px-3 py-1 rounded-full uppercase tracking-tighter">Civil</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Urbanización Costa Sol</h3>
+<p class="text-on-surface-variant font-body-md mb-4 line-clamp-2">Obras de urbanización completa: saneamiento, abastecimiento y pavimentación de área comercial.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Málaga, ES</span>
+<a class="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors" href="#">
+                            Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-24 bg-primary rounded-2xl p-12 text-center text-on-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-3xl mb-6">¿Tienes un proyecto en mente?</h2>
+<p class="font-body-lg text-body-lg mb-8 opacity-90 max-w-xl mx-auto">Nuestro equipo técnico está listo para convertir tus planos en estructuras sólidas y duraderas.</p>
+<button class="bg-[#ED8936] text-white px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:scale-105 transition-all">
+                    Hablemos de tu obra
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-12 max-w-max-width mx-auto text-on-primary">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-primary mb-4">Tecton Ingeniería</div>
+<p class="text-on-primary opacity-80 font-body-md">Solidez, precisión y confianza en cada metro cuadrado construido.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-secondary-fixed text-sm">Empresa</h4>
+<ul class="space-y-2 opacity-80">
+<li><a class="hover:text-secondary-container transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Quiénes Somos</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Servicios</a></li>
+<li><a class="text-secondary-fixed font-bold" href="#">Proyectos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-secondary-fixed text-sm">Legal</h4>
+<ul class="space-y-2 opacity-80">
+<li><a class="hover:text-secondary-container transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Cookies</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Soporte Técnico</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-secondary-fixed text-sm">Contacto</h4>
+<ul class="space-y-2 opacity-80">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">location_on</span>
+                        Av. de la Industria, 45, Madrid
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">call</span>
+                        +34 912 345 678
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span>
+                        info@tecton.es
+                    </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-6 text-center text-on-primary opacity-60 text-sm">
+            © 2024 Tecton Ingeniería. Todos los derechos reservados.
+        </div>
+</footer>
+<script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            // Update button styles
+            btns.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+                btn.classList.add('border-2', 'border-outline-variant', 'text-on-surface-variant');
+            });
+
+            const activeBtn = event.currentTarget;
+            activeBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+            activeBtn.classList.remove('border-2', 'border-outline-variant', 'text-on-surface-variant');
+
+            // Filter logic with animation
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => {
+                    if (category === 'todos' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 300);
+            });
+        }
+    </script>
+</body></html>

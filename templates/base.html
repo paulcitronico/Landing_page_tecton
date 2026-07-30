@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tecton — Constructora líder en diseño y construcción de espacios residenciales, comerciales e industriales. Calidad, innovación y confianza.">
+    <meta name="keywords" content="constructora, construcción, arquitectura, obras, edificios, casas, remodelación">
+    <meta name="author" content="Tecton Constructora">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tecton — Constructora">
+    <meta property="og:description" content="Construimos el futuro con excelencia, innovación y compromiso.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tecton.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80">
+
+    <title>{% block title %}Tecton — Constructora{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',
+                        darker: '#050505',
+                        surface: '#111111',
+                        'surface-light': '#1a1a1a',
+                        accent: {
+                            DEFAULT: '#c9a84c',
+                            light: '#d4b96a',
+                            dark: '#a8893d',
+                        },
+                        'text-primary': '#f0ece4',
+                        'text-muted': '#8a8580',
+                        'text-light': '#b5b0a8',
+                        border: '#2a2a2a',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+    {% block content %}{% endblock %}
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Main JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

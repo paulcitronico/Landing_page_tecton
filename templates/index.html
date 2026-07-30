@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Tecton — Construimos el Futuro{% endblock %}
+
+{% block content %}
+
+    {% include 'partials/_navbar.html' %}
+    {% include 'partials/_hero.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_about.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_services.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_projects.html' %}
+
+    {% include 'partials/_stats.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_testimonials.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_cta.html' %}
+
+    <div class="section-divider"></div>
+
+    {% include 'partials/_contact.html' %}
+
+    {% include 'partials/_footer.html' %}
+
+{% endblock %}

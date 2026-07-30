@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tecton Ingeniería | Solidez en Ingeniería Civil</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Montserrat:wght@100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#944b00",
+                        "tertiary-fixed": "#d4e4fc",
+                        "surface": "#f7fafc",
+                        "surface-variant": "#e0e3e5",
+                        "secondary-container": "#fe9743",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "background": "#f7fafc",
+                        "tertiary-fixed-dim": "#b8c8e0",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-background": "#181c1e",
+                        "on-secondary-fixed": "#301400",
+                        "on-secondary-fixed-variant": "#703700",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#96a0b5",
+                        "inverse-primary": "#bdc7dc",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-secondary-container": "#6b3500",
+                        "on-primary-fixed": "#121c2c",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d7dadc",
+                        "primary-container": "#2d3748",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f1f4f6",
+                        "on-error-container": "#93000a",
+                        "outline": "#75777d",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary": "#182232",
+                        "primary-fixed-dim": "#bdc7dc",
+                        "primary-fixed": "#d9e3f9",
+                        "surface-bright": "#f7fafc",
+                        "outline-variant": "#c5c6cd",
+                        "on-primary-fixed-variant": "#3d4759",
+                        "surface-container": "#ebeef0",
+                        "inverse-on-surface": "#eef1f3",
+                        "surface-container-high": "#e5e9eb",
+                        "surface-tint": "#555f71",
+                        "on-surface-variant": "#45474c",
+                        "on-surface": "#181c1e",
+                        "on-tertiary-container": "#92a1b8",
+                        "on-tertiary-fixed-variant": "#39485c",
+                        "tertiary-container": "#29384b",
+                        "tertiary": "#132235",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed-dim": "#ffb783"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "max-width": "1280px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #f7fafc;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(24, 34, 50, 0.4) 2px, transparent 0);
+            background-size: 30px 30px;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm h-20 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto h-full">
+<div class="flex items-center gap-4">
+<img alt="Tecton Ingeniería Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWdEtfFv8P3PxroopidU5I1x_6zImSuCh3xjSyARZy67efTIss18Jr9tF4HbdsbpgxFsRF459pbZRxgE_L-X5D7PyWlMCRsw0dIX4hQsky9pcToHIH2xOuhf0rlfT_HQJaL95uyozMwA4GoJJGtm_i1s82puFNsQx_9JSh9TenqdSNcQbBP5vL-aADpke9bIOzQSgrdFjXtIBZNJCYcFps0LMbXuK-4JIGzs1Je7AhbetpuJxA5k6f"/>
+<span class="hidden lg:block font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Tecton Ingeniería</span>
+</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed border-b-2 border-secondary font-bold pb-1 transition-all" href="#">Inicio</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Quiénes Somos</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Servicios</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Proyectos</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contacto</a>
+<button class="bg-[#ED8936] text-white px-6 py-2.5 rounded-lg font-bold hover:translate-y-[-2px] transition-all shadow-md active:scale-95">
+                    Presupuesto
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105 transform" data-alt="A cinematic, low-angle shot of a towering modern glass skyscraper under construction with steel girders exposed and a clear blue sky. The lighting is crisp and natural, highlighting the architectural precision and industrial textures. The overall mood is powerful, professional, and forward-thinking, emphasizing engineering excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDb2iTZ1nqtZcJz5Hp8f-6rFkl0KyQ3prXvddl0l_K2SpCGkOc-JWNLTjlAPaXy8gNv8g1xC9CQR2IVwiiQrNTnLrbZiEvbBJh33JsNZAKACt9791mUVY706D805tHHieDZc3hGc8xuD2_f93o1Es-JzSQ_ZRSSehvd5891aSWv4WUw1Op3EFtSwrx4PFhprtZXNldNx7XIzSjDmYUHWVSwYZcXWPPbwmElDgLhaIVcvrJ-3Rmtinjl')"></div>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 hero-pattern opacity-30"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 bg-secondary text-white px-4 py-1.5 rounded-full mb-6 animate-fade-in">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Excelencia Técnica Certificada</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 leading-tight">
+                        Construyendo el futuro con <span class="text-secondary-container">precisión milimétrica</span>.
+                    </h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-xl leading-relaxed">
+                        Lideramos proyectos de infraestructura civil con un compromiso absoluto hacia la calidad, la seguridad y la innovación tecnológica.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-[#ED8936] text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                            Explorar Proyectos
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all">
+                            Nuestra Trayectoria
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Highlight -->
+<section class="py-24 bg-surface">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold mb-3 block">Nuestras Especialidades</span>
+<h2 class="font-headline-md text-headline-md md:text-4xl text-primary font-bold">Servicios de Ingeniería de Alto Impacto</h2>
+</div>
+<a class="text-secondary font-bold flex items-center gap-2 group" href="#">
+                        Ver todos los servicios
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
+</a>
+</div>
+<!-- Bento Grid for Services -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-white p-8 rounded-xl card-shadow border border-outline-variant hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-lg mb-6 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Diseño Estructural</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Cálculos precisos y modelado avanzado para garantizar la integridad y longevidad de cualquier edificación compleja.
+                        </p>
+</div>
+<!-- Service 2 -->
+<div class="bg-white p-8 rounded-xl card-shadow border border-outline-variant hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-lg mb-6 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="construction">construction</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Gestión de Obra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Supervisión técnica rigurosa y optimización de recursos en campo para cumplir plazos y presupuestos sin desviaciones.
+                        </p>
+</div>
+<!-- Service 3 -->
+<div class="bg-white p-8 rounded-xl card-shadow border border-outline-variant hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-lg mb-6 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Consultoría Técnica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Informes periciales, estudios de suelo y asesoramiento normativo especializado para proyectos de gran envergadura.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-primary py-16">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div>
+<p class="text-secondary-container font-display-lg text-4xl font-bold mb-2">15+</p>
+<p class="text-white/70 font-label-sm text-sm uppercase">Años de Experiencia</p>
+</div>
+<div>
+<p class="text-secondary-container font-display-lg text-4xl font-bold mb-2">250+</p>
+<p class="text-white/70 font-label-sm text-sm uppercase">Proyectos Finalizados</p>
+</div>
+<div>
+<p class="text-secondary-container font-display-lg text-4xl font-bold mb-2">50k</p>
+<p class="text-white/70 font-label-sm text-sm uppercase">m² Construidos</p>
+</div>
+<div>
+<p class="text-secondary-container font-display-lg text-4xl font-bold mb-2">0</p>
+<p class="text-white/70 font-label-sm text-sm uppercase">Incidentes Graves</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 transform translate-x-20 hidden lg:block"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto relative z-10">
+<div class="bg-white rounded-2xl overflow-hidden flex flex-col lg:flex-row shadow-2xl border border-outline-variant">
+<div class="p-10 lg:p-16 lg:w-3/5">
+<h2 class="font-headline-md text-headline-md md:text-4xl text-primary font-extrabold mb-6">
+                            ¿Tienes un proyecto en mente? <br/>
+                            Hagámoslo realidad.
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            Nuestros ingenieros están listos para analizar tu propuesta y ofrecerte una solución técnica eficiente y rentable. Solicita tu presupuesto sin compromiso.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-3 hover:bg-tertiary-container transition-all" href="mailto:info@tecton.es">
+<span class="material-symbols-outlined">mail</span>
+                                Solicitar Presupuesto
+                            </a>
+<a class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-3 hover:bg-primary/5 transition-all" href="tel:+34900000000">
+<span class="material-symbols-outlined">call</span>
+                                (+34) 91 123 4567
+                            </a>
+</div>
+</div>
+<div class="lg:w-2/5 relative min-h-[300px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A professional engineer in a white hard hat and high-visibility vest pointing at a digital tablet showing a 3D architectural blueprint on a bright construction site. The background shows cranes and partially completed structures under a bright midday sun. The shot is clean, professional, and full of industrial energy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuV-wx0nj1GO9k_sQrd8mhvpBKwDWKlbNnO2aadroXce8KYqiFMn9Fa6_evNTY9bAnPk9ct7uP0siX6UkiVqELegM2MEIofsl72HOBKStewxU12fHU9qPW9q9NxOENHuRdzwyvWhqtvhuGzPRdqyvEJfY9ytgQmFgJ3jIeCTPxHdudhtuS-r9VMkjKbjV9ODlB6MQSMUM95W3qBcae7W_U6xDjmeXd73fFsi9DHOujTY69TKHANw1l')"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container w-full transition-colors">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-max-width mx-auto">
+<!-- Brand Column -->
+<div class="space-y-6">
+<span class="font-headline-md text-headline-md font-bold text-on-primary">Tecton Ingeniería</span>
+<p class="font-body-md text-body-md opacity-80 leading-relaxed">
+                    Referente nacional en ingeniería civil y edificación industrial. Compromiso, precisión y sostenibilidad.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:border-transparent transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:border-transparent transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<!-- Links Column -->
+<div class="space-y-6">
+<h4 class="font-headline-md text-lg font-bold border-b border-white/10 pb-2">Explorar</h4>
+<ul class="space-y-3 font-body-md text-body-md opacity-80">
+<li><a class="hover:text-secondary-container transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Servicios</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Proyectos Destacados</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Blog Técnico</a></li>
+</ul>
+</div>
+<!-- Legal Column -->
+<div class="space-y-6">
+<h4 class="font-headline-md text-lg font-bold border-b border-white/10 pb-2">Legal</h4>
+<ul class="space-y-3 font-body-md text-body-md opacity-80">
+<li><a class="hover:text-secondary-container transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Cookies</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Soporte Técnico</a></li>
+</ul>
+</div>
+<!-- Contact Column -->
+<div class="space-y-6">
+<h4 class="font-headline-md text-lg font-bold border-b border-white/10 pb-2">Ubicación</h4>
+<div class="space-y-4 font-body-md text-body-md opacity-80">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary-container">location_on</span>
+<span>Av. de la Ingeniería, 42<br/>28001 Madrid, España</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary-container">schedule</span>
+<span>Lunes - Viernes: 08:30 - 18:30</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="border-t border-white/10 py-6">
+<div class="px-margin-desktop max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-sm opacity-60">© 2024 Tecton Ingeniería. Todos los derechos reservados.</p>
+<div class="flex gap-6 font-label-sm text-xs uppercase tracking-widest opacity-60">
+<span>ISO 9001</span>
+<span>ISO 14001</span>
+<span>OHSAS 18001</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-white/95', 'backdrop-blur-md');
+                nav.classList.remove('h-20', 'bg-surface');
+            } else {
+                nav.classList.add('h-20', 'bg-surface');
+                nav.classList.remove('h-16', 'bg-white/95', 'backdrop-blur-md');
+            }
+        });
+
+        // Initialize micro-animations
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.add('scale-95');
+                setTimeout(() => this.classList.remove('scale-95'), 100);
+            });
+        });
+    </script>
+</body></html>
